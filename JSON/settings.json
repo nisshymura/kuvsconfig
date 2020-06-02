@@ -1,0 +1,89 @@
+{
+    "update.mode": "manual",
+    "extensions.autoUpdate": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "platexmk",
+            "tools": [
+                "platexmk"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],    
+    "latex-workshop.latex.tools": [
+        {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOC%"
+          ]
+        },
+        {
+            "name": "platexmk",
+            "command": "latexmk",
+            "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "-pdfdvi",
+              "-latex=platex",
+              "-e",
+              "$dvipdf=q/dvipdfmx %O -o %D %S/;$bibtex=q/pbibtex/;",
+              "%DOC%"
+            ]
+          }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.message.information.show": true,
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.chktex.args.active": [
+        "-q", "-nall", 
+        "-e9e10m15e16w17w18w25w35e45"
+    ],
+    "latex-workshop.chktex.args.root": [
+        "-q", "-nall", 
+        "-e9e10m15e16w17w18w25w35e45"
+    ],
+    "latex-workshop.chktex.enabled": true,
+
+    "c-cpp-flylint.clang.enable": false,
+    "c-cpp-flylint.flexelint.enable": false,
+    
+    "highlight-bad-chars.badCharDecorationStyle": {
+        "cursor": "default",
+        "backgroundColor": "rgba(127,0,0,0.8)",
+        "borderStyle": "none",
+        // "borderWidth": "0px",
+        // "borderColor": "rgba(255,0,0,0.6)"
+    },
+    "highlight-bad-chars.additionalUnicodeChars": 
+        [
+            "￥＼", 
+            "：；",
+            "”“’‘｀",
+            "＃＄％＆＊＾＿＜＞", 
+            "｛｝［］",  
+        ],
+
+    "errorLens.clearDecorations": true,
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.enabledDiagnosticLevels": [
+        "error"
+        ],
+    "errorLens.addAnnotationTextPrefixes": true,
+        
+    "workbench.startupEditor": "newUntitledFile",
+        
+}
