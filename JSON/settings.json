@@ -1,3 +1,4 @@
+// 情報基礎演習[理学部] 用 Visual Studio Code設定ファイル
 {
     "update.mode": "manual",
     "extensions.autoUpdate": false,
@@ -15,6 +16,15 @@
             "name": "latexmk",
             "tools": [
                 "latexmk"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+            "tools": [
+            "pdflatex",
+            "bibtex",
+            "pdflatex",
+            "pdflatex"
             ]
         }
     ],    
@@ -43,6 +53,23 @@
               "$dvipdf=q/dvipdfmx %O -o %D %S/;$bibtex=q/pbibtex/;",
               "%DOC%"
             ]
+          },
+          {
+              "name": "pdflatex",
+              "command": "pdflatex",
+              "args": [
+               "-synctex=1",
+               "-interaction=nonstopmode",
+               "-file-line-error",
+               "%DOC%"
+              ]
+          },
+          {
+              "name": "bibtex",
+              "command": "bibtex",
+              "args": [
+               "%DOCFILE%"
+              ]
           }
     ],
     "latex-workshop.view.pdf.viewer": "tab",
