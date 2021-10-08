@@ -1,5 +1,5 @@
 # kuvsconfig
-A script for setting up environment for visual studio code editor. 
+Visual Studio Code セットアップスクリプト (Linux)
 
 ## 年次更新手順
 
