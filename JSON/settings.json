@@ -1,9 +1,9 @@
 // 情報基礎演習[理学部] 用 Visual Studio Code設定ファイル
+// Last updated: 2021/Oct/8
 {
     "update.mode": "manual",
     "extensions.autoUpdate": false,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
     
     "latex-workshop.latex.recipes": [
         {
