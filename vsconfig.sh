@@ -3,7 +3,7 @@
 ###  Visual Studio Code 初期設定ツール
 
 ##### !!!!!!  このツールの場所を置き換えたとき、要設定変更 #########################
-#ROOTDIR=$HOME/vsconfig
+#ROOTDIR=$HOME/kuvsconfig
 ROOTDIR=/usr/local/share/vsconfig
 
 ## !!!!!! 拡張機能は各機能を予め  https://marketplace.visualstudio.com/VSCode
