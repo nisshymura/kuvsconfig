@@ -67,7 +67,7 @@ stamp=`date '+%Y%m%d-%H%M%S'`  # time stamp
 if [ -d $VSEXTDIR ]; then
     mv -f $VSEXTDIR ${VSEXTDIR}-${stamp}
     mkdir $VSEXTDIR
-    echo "+ 旧拡張パッケージフォルダ ${VSEXTDIR} は ${VSEXTDIR}-${stamp}.json にバックアップされました．"
+    echo "+ 旧拡張パッケージフォルダ ${VSEXTDIR} は ${VSEXTDIR}-${stamp} にバックアップされました．"
 fi
 
 for i in ${pkglist[@]}; do
