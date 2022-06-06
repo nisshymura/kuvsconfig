@@ -17,8 +17,7 @@ Visual Studio Code セットアップスクリプト (Linux)
     ```
 2. Visual Studio Code のパッケージダウンロードサイト https://marketplace.visualstudio.com/VSCode より必要な拡張機能の最新版を検索してダウンロードする。
     - 各拡張機能の'Download Extension'のリンクからVSIXファイルをダウンロード
-3
-. ダウロードしたVSIXファイルを、VDI の /usr/local/share/kuvsconfig/extensions/ 配下にコピー。(古いVSIXファイルがあれば削除)
+3. ダウロードしたVSIXファイルを、VDI の /usr/local/share/kuvsconfig/extensions/ 配下にコピー。(古いVSIXファイルがあれば削除)
 4. スクリプトファイル vsconfig.sh 中の pkglist 変数のリストにダウンロードしたVSIXファイル名を列挙(1ファイル1行。古いファイル名は削除。)
 5. スクリプト vsconfig.sh 中の変数 ROOTDIR が /usr/local/share/vsconfig に設定されていることを確認。
 6. スクリプトファイル /usr/local/share/vsconfig/vsconfig.sh に実行権限を与える。
