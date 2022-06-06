@@ -5,6 +5,7 @@
     "extensions.autoUpdate": false,
     "telemetry.telemetryLevel": "off",
     "window.confirmBeforeClose": "keyboardOnly",
+    "window.zoomLevel": 1,
     
     "latex-workshop.latex.recipes": [
         {
@@ -97,13 +98,13 @@
         // "borderColor": "rgba(255,0,0,0.6)"
     },
     "highlight-bad-chars.additionalUnicodeChars": 
-        [
-            "￥＼", 
-            "：；",
-            "”“’‘｀",
-            "＃＄％＆＊＾＿＜＞", 
-            "｛｝［］",  
-        ],
+    [
+        "￥／＼", 
+        "：；",
+        "”“",
+        "〜＠＃＄％＆＊＾＿＜＞｜", 
+        "（）｛｝［］",  
+    ],
 
     "errorLens.clearDecorations": true,
     "errorLens.gutterIconsEnabled": true,
