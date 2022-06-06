@@ -22,4 +22,4 @@ Visual Studio Code セットアップスクリプト (Linux)
 5. スクリプト vsconfig.sh 中の変数 ROOTDIR が /usr/local/share/vsconfig に設定されていることを確認。
 6. スクリプトファイル /usr/local/share/vsconfig/vsconfig.sh に実行権限を与える。
 7. スクリプトファイル /usr/local/share/vsconfig/vsconfig.sh を /usr/local/bin/vsconfig.sh としてsymbolic link (/usr/local/bin に古いスクリプトファイルがあれば削除する)
-8. Terminal で kuvsconfig.sh スクリプトを実行すればうまく動作するはず。
+8. Terminal で vsconfig.sh スクリプトを実行すればうまく動作するはず。
