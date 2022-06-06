@@ -22,7 +22,7 @@ James-Yu.latex-workshop-8.2.0.vsix
 #### ここから下は変更の必要はないはず #########################################################
 
 ## default path to vscode setting file 'settings.json'
-VSEXTDIR=$HOME/.vscode/extensoins
+VSEXTDIR=$HOME/.vscode/extensions
 VSCONFDIR=$HOME/.config/Code/User
 
 ## Path to extension files & JSON files
