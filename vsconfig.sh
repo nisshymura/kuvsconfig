@@ -9,8 +9,8 @@ ROOTDIR=/usr/local/share/vsconfig
 ## !!!!!! 拡張機能は各機能を予め  https://marketplace.visualstudio.com/VSCode
 ## !!!!!! から検索し、[Download Extension] VSIX 形式でダウンロードして extensions/ 以下に配置しておく。
 
-## インストール希望 パッケージ名 (6個)
-## C/C++, C/C++ Advanced Lint, LaTeX Workshop, LaTeX language support, Highlight Bad Chars, Error Lens
+## インストール希望 パッケージ名 (5個)
+## C/C++, C/C++ Advanced Lint, LaTeX Workshop, Highlight Bad Chars, Error Lens
 
 ## !!!!!! インストールするVSIXファイル名は以下に1行ずつ列挙しておく。
 ## !!!!!! とりあえずテスト用に古いエントリーが入れてあるので、これは最新版に置き換え。
