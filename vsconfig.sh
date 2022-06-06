@@ -22,6 +22,7 @@ James-Yu.latex-workshop-8.2.0.vsix
 #### ここから下は変更の必要はないはず #########################################################
 
 ## default path to vscode setting file 'settings.json'
+VSEXTDIR=$HOME/.vscode/extensoins
 VSCONFDIR=$HOME/.config/Code/User
 
 ## Path to extension files & JSON files
@@ -60,6 +61,14 @@ case $ANSWER in
     "Y" | "y" | "yes" | "Yes" | "YES" ) echo ">>> 初期設定を始めます．終了までしばらくこのままお待ちください... <<<";;
     * ) echo ">>> 初期設定をキャンセルしました．このウィンドウを閉じてください．<<<"; exit 1;;
 esac
+    
+stamp=`date '+%Y%m%d-%H%M%S'`  # time stamp
+
+if [ -d $VSEXTDIR ]; then
+    mv -f $VSEXTDIR ${VSEXTDIR}-${stamp}
+    mkdir $VSEXTDIR
+    echo "+ 旧拡張パッケージフォルダ ${VSEXTDIR} は ${VSEXTDIR}-${stamp}.json にバックアップされました．"
+fi
 
 for i in ${pkglist[@]}; do
     if [ -f $EXTDIR/$i ]; then
@@ -72,7 +81,6 @@ for i in ${pkglist[@]}; do
 done
 
 if [ -f $VSCONFDIR/settings.json ]; then
-    stamp=`date '+%Y%m%d-%H%M%S'`
     mv -f $VSCONFDIR/settings.json  $VSCONFDIR/settings-${stamp}.json
     echo "+ 旧設定ファイル ${VSCONFDIR}/settings.json は ${VSCONFDIR}/settings-${stamp}.json にバックアップされました．"
 fi
