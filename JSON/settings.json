@@ -75,11 +75,7 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.message.information.show": true,
     "latex-workshop.latex.autoBuild.run": "never",
-    "latex-workshop.chktex.args.active": [
-        "-q", "-nall", 
-        "-e9e10m15e16w17w18w25w35e45"
-    ],
-    "latex-workshop.chktex.args.root": [
+    "latex-workshop.chktex.exec.args": [
         "-q", "-nall", 
         "-e9e10m15e16w17w18w25w35e45"
     ],
