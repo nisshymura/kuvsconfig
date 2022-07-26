@@ -77,19 +77,20 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.message.information.show": true,
     "latex-workshop.latex.autoBuild.run": "never",
-    "latex-workshop.chktex.exec.args": [
+    "latex-workshop.linting.chktex.exec.args": [
         "-q", "-nall", 
         "-e9e10m15e16w17w18w25w35e45"
     ],
-    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.linting.chktex.enabled": true,
 
     "c-cpp-flylint.clang.enable": false,
     "c-cpp-flylint.flexelint.enable": false,
+    "c-cpp-flylint.lizard.enable": false,
     
     "highlight-bad-chars.badCharDecorationStyle": {
         "cursor": "default",
         "backgroundColor": "rgba(127,0,0,0.8)",
-        "borderStyle": "none",
+        "borderStyle": "none"
         // "borderWidth": "0px",
         // "borderColor": "rgba(255,0,0,0.6)"
     },
