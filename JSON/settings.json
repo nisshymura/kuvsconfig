@@ -40,7 +40,8 @@
             "-file-line-error",
             "-pdf",
             "%DOC%"
-          ]
+          ],
+          "env": {}
         },
         {
             "name": "platexmk",
@@ -54,7 +55,8 @@
               "-e",
               "$dvipdf=q/dvipdfmx %O -o %D %S/;$bibtex=q/pbibtex/;",
               "%DOC%"
-            ]
+            ],
+            "env": {}
           },
           {
               "name": "pdflatex",
@@ -64,14 +66,16 @@
                "-interaction=nonstopmode",
                "-file-line-error",
                "%DOC%"
-              ]
+              ],
+              "env": {}
           },
           {
               "name": "bibtex",
               "command": "bibtex",
               "args": [
                "%DOCFILE%"
-              ]
+              ],
+              "env": {}
           }
     ],
     "latex-workshop.view.pdf.viewer": "tab",
